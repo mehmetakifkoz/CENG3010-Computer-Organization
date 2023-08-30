@@ -1,0 +1,9 @@
+{
+  "name": "MARS Web APP",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "my-dependency": "^1.0.0"
+  }
+}

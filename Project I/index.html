@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MARS Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="toolbar">
+    <h2>MARS Web App</h2>
+    <button id="run-btn">Run</button>
+  </div>
+  <div id="registers">
+    <h2>Registers</h2>
+    <table id="registers-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Number</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>$zero</td>
+          <td>0</td>
+          <td id="reg_0">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$at</td>
+          <td>1</td>
+          <td id="reg_1">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$v0</td>
+          <td>2</td>
+          <td id="reg_2">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$v1</td>
+          <td>3</td>
+          <td id="reg_3">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$a0</td>
+          <td>4</td>
+          <td id="reg_4">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$a1</td>
+          <td>5</td>
+          <td id="reg_5">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$a2</td>
+          <td>6</td>
+          <td id="reg_6">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$a3</td>
+          <td>7</td>
+          <td id="reg_7">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t0</td>
+          <td>8</td>
+          <td id="reg_8">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t1</td>
+          <td>9</td>
+          <td id="reg_9">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t2</td>
+          <td>10</td>
+          <td id="reg_10">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t3</td>
+          <td>11</td>
+          <td id="reg_11">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t4</td>
+          <td>12</td>
+          <td id="reg_12">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t5</td>
+          <td>13</td>
+          <td id="reg_13">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t6</td>
+          <td>14</td>
+          <td id="reg_14">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t7</td>
+          <td>15</td>
+          <td id="reg_15">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s0</td>
+          <td>16</td>
+          <td id="reg_16">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s1</td>
+          <td>17</td>
+          <td id="reg_17">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s2</td>
+          <td>18</td>
+          <td id="reg_18">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s3</td>
+          <td>19</td>
+          <td id="reg_19">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s4</td>
+          <td>20</td>
+          <td id="reg_20">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s5</td>
+          <td>21</td>
+          <td id="reg_21">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s6</td>
+          <td>22</td>
+          <td id="reg_22">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$s7</td>
+          <td>23</td>
+          <td id="reg_23">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t8</td>
+          <td>24</td>
+          <td id="reg_24">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$t9</td>
+          <td>25</td>
+          <td id="reg_25">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$k0</td>
+          <td>26</td>
+          <td id="reg_26">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$k1</td>
+          <td>27</td>
+          <td id="reg_27">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$gp</td>
+          <td>28</td>
+          <td id="reg_28">0x10008000</td>
+        </tr>
+        <tr>
+          <td>$sp</td>
+          <td>29</td>
+          <td id="reg_29">0x7fffeffc</td>
+        </tr>
+        <tr>
+          <td>$fp</td>
+          <td>30</td>
+          <td id="reg_30">0x00000000</td>
+        </tr>
+        <tr>
+          <td>$ra</td>
+          <td>31</td>
+          <td id="reg_31">0x00000000</td>
+        </tr>
+        <tr>
+          <td>pc</td>
+          <td></td>
+          <td id="pc">0x00000000</td>
+        </tr>
+        <tr>
+          <td>hi</td>
+          <td></td>
+          <td id="hi">0x00000000</td>
+        </tr>
+        <tr>
+          <td>lo</td>
+          <td></td>
+          <td id="lo">0x00000000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="edit">
+    <h2>Edit</h2>
+    <textarea id="editor"></textarea>
+  </div>
+
+  <div id="execute">
+    <div id="instruction-memory">
+      <h2>Instruction Memory</h2>
+      <table id="instruction-memory-table">
+        <thead>
+          <th>Address</th>
+          <th>Code</th>
+          <th>Source</th>
+        </thead>
+        <tbody>
+          <!-- Instruction memory content goes here -->
+        </tbody>
+      </table>
+    </div>
+    <div id="data-memory">
+      <h2>Data Memory</h2>
+      <table id="data-memory-table">
+        <thead>
+          <th>Address</th>
+          <th>Value (+0)</th>
+          <th>Value (+4)</th>
+          <th>Value (+8)</th>
+          <th>Value (+c)</th>
+        </thead>
+        <tbody>
+          <!-- Data memory content goes here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
